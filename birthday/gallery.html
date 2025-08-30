@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Gifts</title>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f8ff;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #ff6666;
+    color: white;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="boxes-container">
+    <div class="box">
+        <img src="https://via.placeholder.com/120" alt="Box 1">
+        <button onclick="showMessage('Box 1: Hello!')">Click Me</button>
+    </div>
+    <div class="box">
+        <img src="https://via.placeholder.com/120" alt="Box 2">
+        <button onclick="showMessage('Box 2: Happy Birthday!')">Click Me</button>
+    </div>
+    <div class="box">
+        <img src="https://via.placeholder.com/120" alt="Box 3">
+        <button onclick="showMessage('Box 3: Lots of love!')">Click Me</button>
+    </div>
+    <div class="box">
+        <img src="https://via.placeholder.com/120" alt="Box 4">
+        <button onclick="showMessage('Box 4: Surprise!')">Click Me</button>
+    </div>
+    <div class="box">
+        <img src="https://via.placeholder.com/120" alt="Box 5">
+        <button onclick="showMessage('Box 5: Enjoy your day!')">Click Me</button>
+    </div>
+</div>
+
+<script>
+function showMessage(msg) {
+    alert(msg);
+}
+</script>
+
+</body>
+</html>
